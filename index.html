@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://kit.fontawesome.com/7f5d4abef2.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            transition: all 0.1s;
+            user-select: none;
+        }
+        
+        li,
+        button:hover {
+            cursor: pointer;
+        }
+        
+        body {
+            overflow-x: hidden;
+            background: url(./background.jpg);
+            background-size: 100vw auto;
+            background-attachment: scroll;
+            background-repeat: no-repeat;
+            font-family: montserrat;
+            margin: 0;
+            padding: 0;
+        }
+        
+        nav ul {
+            margin: 0;
+            padding: 0;
+            ;
+        }
+        
+        nav {
+            position: absolute;
+            width: 95vw;
+        }
+        
+        nav li {
+            padding: 10px;
+            color: white;
+            float: right;
+            display: inline;
+            list-style-type: none;
+            margin: 40px 20px 40px 20px;
+        }
+        
+        .first {
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100vh;
+            width: 95vw;
+        }
+        
+        .first h1 {
+            font-size: 80px;
+            margin-left: 148px;
+            margin-top: 0px;
+        }
+        
+        .first p {
+            margin-left: 148px;
+            font-size: 20px;
+        }
+        
+        .sec {
+            color: white;
+            display: flex;
+            background-color: rgb(24, 24, 24);
+            height: 100vh;
+            width: 100vw;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .sec img {
+            height: 80%;
+        }
+        
+        .sec p {
+            font-size: 16px;
+            line-height: 30px;
+            color: tomato;
+        }
+        
+        .sec div {
+            width: 40%;
+        }
+        
+        .sec h2 {
+            font-size: 50px;
+        }
+        
+        .meta {
+            padding-left: 70px;
+        }
+        
+        .third {
+            color: white;
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(16, 16, 16);
+            height: 100vh;
+            width: 100vw;
+            align-items: center;
+        }
+        
+        .third h1 {
+            font-size: 60px;
+        }
+        
+        .imgs {
+            margin-top: 30px;
+            display: flex;
+        }
+        
+        .imgs img {
+            height: 60%;
+            margin: 13px;
+        }
+        
+        .news {
+            color: white;
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(24, 24, 24);
+            height: 40vh;
+            width: 100vw;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .end {
+            color: white;
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(16, 16, 16);
+            height: 40vh;
+            width: 100vw;
+            justify-content: center;
+            align-items: center;
+            padding-top: 90px;
+        }
+        
+        .end button {
+            height: 50px;
+            width: 50px;
+            font-size: 20px;
+            margin: 10px;
+            border-radius: 40px;
+            background-color: rgb(204, 38, 23);
+            border: none;
+            color: white;
+            font-weight: bold;
+        }
+        
+        .end p {
+            margin-top: 30px;
+            text-align: center;
+        }
+        
+        .news h3 {
+            font-size: 30px;
+        }
+    </style>
+
+</head>
+
+
+<body>
+    <nav>
+        <ul>
+            <li class="h" style="float: left; padding: 5px; padding-left: 20px; font-size: 30px;">Ian Sommerhalder
+                <font color="#cc2617">.com</font>
+            </li>
+            <li style="background:rgb(204, 38, 23); padding:10px; padding-left: 20px; padding-right: 20px; border-radius: 40px;">Subscribe</li>
+            <li>Gallery</li>
+            <li>About</li>
+            <li>Home</li>
+        </ul>
+    </nav>
+    <div class="first">
+        <p style="color:rgb(248, 85, 70); font-weight: bold; margin-bottom: 5px;">Official Website</p>
+        <h1>Ian Sommerhalder</h1>
+    </div>
+    <div class="sec">
+        <img src="img2.jpg">
+        <div class="meta">
+            <h2>About Ian</h2>
+            <h3>Actor</h3>
+            <p>Ian Joseph Somerhalder is an American actor, model, activist and director. He is known for playing Boone Carlyle in the TV drama Lost, Damon Salvatore in The CW's supernatural drama The Vampire Diaries and Dr. Luther Swann in Netflix's sci-fi
+                horror series V Wars.</p>
+            <a href="https://en.wikipedia.org/wiki/Ian_Somerhalder"><button style="padding:15px 40px 15px 40px; border-radius:30px; background-color:rgb(204, 38, 23); border:none; color:white; font-weight: bold;">
+                    Wikipedia
+                </button></a>
+        </div>
+    </div>
+    <div class="third">
+        <h1>Gallery</h1>
+        <div class="imgs">
+            <img src="item1.jpg" alt="">
+            <img src="item2.jpg" alt="">
+            <img src="item3.jpg" alt="">
+            <img src="item4.jpg" alt="">
+        </div>
+    </div>
+    <div class="news">
+        <h3>Stay In Touch</h3>
+        <button style="padding:15px 40px 15px 40px; border-radius:30px; background-color:rgb(204, 38, 23); border:none; color:white; font-weight: bold;">News Letter</button>
+    </div>
+    <div class="end">
+        <div>
+            <button><i class="fab fa-facebook-f"></i></button>
+            <button><i class="fab fa-instagram"></i></button>
+            <button><i class="fab fa-twitter"></i></button>
+        </div>
+        <p style="font-size: small; color: rgb(204, 38, 23);">Copyright by Ian Somerhalder Foundation</p>
+    </div>
+</body>
+
+</html>
